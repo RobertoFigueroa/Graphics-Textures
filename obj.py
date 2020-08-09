@@ -11,13 +11,14 @@ class Obj(object):
         self.faces = []
 
         self.read()
-
         
     def read(self):
         for line in self.lines:
             if line:
-                prefix, value = line.split(' ', 1)
-
+                try:
+                    prefix, value = line.split(' ', 1)
+                except:
+                    continue
                 if prefix == 'v': # vertices
                     self.vertices.append(list(map(float,value.split())))
                 elif prefix == 'vn': #normal

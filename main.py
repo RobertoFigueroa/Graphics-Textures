@@ -11,8 +11,8 @@ my_bmp_file.glInit()
 my_bmp_file.glCreateWindow(1000,1000)
 my_bmp_file.glClear()
 
-t = Texture('./models/model.bmp')
-my_bmp_file.loadModel('./models/model.obj', V3(375,500,0), V3(50,50,50), t)
+t = Texture('./models/heli.bmp')
+my_bmp_file.loadModel('./models/heli.obj', V3(500,500,0), V3(5,5,5), t)
 
 
 my_bmp_file.glFinish('output.bmp')
