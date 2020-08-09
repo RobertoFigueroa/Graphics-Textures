@@ -15,4 +15,4 @@ t = Texture('./models/heli.bmp')
 my_bmp_file.loadModel('./models/heli.obj', V3(500,500,0), V3(5,5,5), t)
 
 
-my_bmp_file.glFinish('output.bmp')
+my_bmp_file.glFinish('outs.bmp')
